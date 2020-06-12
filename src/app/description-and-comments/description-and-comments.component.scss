@@ -25,3 +25,18 @@
 #description #submitChangesButton {
 	// background: red;
 }
+
+label {
+	margin-bottom: 0;
+}
+
+#chooseImage {
+	display: inline-block;
+	height: auto;
+}
+
+.form-control-file,
+.form-control-range {
+	display: inline-block;
+	width: auto;
+}

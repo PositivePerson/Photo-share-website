@@ -11,6 +11,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TilesComponent } from './tiles/tiles.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { DescriptionAndCommentsComponent } from './description-and-comments/description-and-comments.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DescriptionAndCommentsComponent } from './description-and-comments/desc
     SliderComponent,
     TilesComponent,
     DetailViewComponent,
-    DescriptionAndCommentsComponent
+    DescriptionAndCommentsComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
