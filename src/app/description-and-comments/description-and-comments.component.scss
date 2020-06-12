@@ -6,10 +6,13 @@
 	// color: #171717;
 	// border-top: 4px solid rgba(0, 0, 0, 0.2);
 
-	border: 0;
-	height: 1px;
-	background: #333;
-	background-image: linear-gradient(to right, #333, #ccc, #333);
+	// border: 0;
+	// height: 1px;
+	// background: #333;
+	// background-image: linear-gradient(to right, #333, #ccc, #333);
+
+	border-top-color: #bbb;
+	opacity: 0.5;
 }
 
 #description {
@@ -39,4 +42,10 @@ label {
 .form-control-range {
 	display: inline-block;
 	width: auto;
+}
+
+@media only screen and (max-device-width: 480px) {
+	#belowDetails {
+		width: 100% !important;
+	}
 }

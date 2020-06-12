@@ -1,14 +1,53 @@
 <section id="detail_view">
-  <div class="container-fluid d-flex flex-row">
+  <div class="container-fluid d-flex flex-row" id="detail_view_container">
+    <!-- --------------- M O B I L E --------------- -->
+    <div class="d-block d-sm-none deleteAreaMobile">
+      <div class="my-2">Tags:</div>
+      <div class="my-2" id="cmcGroup">
+        <button type="button" class="btn btn-warning">CMC (Group)</button>
+      </div>
+      <div class="my-2" id="deleteAdmin">
+        <button type="button" class="btn btn-danger">Delete (admin)</button>
+      </div>
+    </div>
+
+    <div class="d-block d-sm-none countingAreaMobile">
+      <div class="plus_and_counting">
+        <button type="button" class="btn btn-success plus">+</button>
+        <div class="count text-center d-flex align-items-center">
+          <span classs="">11</span>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-danger minus">-</button>
+    </div>
+
+    <div class="d-block d-sm-none uploaded_and_visibility_mobile">
+      <div class="my-2 text-right">Uploaded by:</div>
+      <div class="my-2 text-right" id="uploadedBy">
+        <button type="button" class="btn btn-success ml-auto">admin</button>
+      </div>
+      <div class="my-2 text-right" id="visibility">
+        <button type="button" class="btn btn-danger">Toggle visibility / Hide</button>
+      </div>
+
+    </div>
+    <!-- --------------------------------------------- -->
+
     <div class="banerBox">
       <div class="baner d-flex" id="baner1"></div>
     </div>
 
     <div class="container-fluid mx-auto imageDetailArea">
-      <div class="row h-100">
-        <div class="col-3">
+      <!-- <div class="row d-block d-sm-none choosedImageBoxMobile">
+        <div class="">
+          <img src="../../assets/imgs/2.jpg" alt="">
+        </div>
+      </div> -->
+      <div class="row px-3 h-100">
+        <div class="d-none d-sm-block col-sm-3">
           <div class="row h-50">
-            <div class="col-12 d-flex align-items-center pl-5">
+            <div class="col-12 d-flex align-items-center pl-sm-5">
               <div class="countingArea">
 
                 <div class="plus_and_counting">
@@ -24,7 +63,7 @@
             </div>
           </div>
           <div class="row h-50">
-            <div class="col-12 d-flex align-items-end pl-5">
+            <div class="col-12 d-flex align-items-end pl-sm-5">
               <div class="deleteArea">
 
                 <div class="my-2">Tags:</div>
@@ -40,15 +79,15 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6 px-0 px-sm-1">
           <div class="choosedImageBox">
             <img src="../../assets/imgs/2.jpg" alt="">
           </div>
         </div>
-        <div class="col-3">
+        <div class="d-none d-sm-block col-sm-3">
           <div class="row h-50"></div>
           <div class="row h-50">
-            <div class="col-12 d-flex align-items-end flex-row-reverse pr-5">
+            <div class="col-12 d-flex align-items-end flex-row-reverse pr-sm-5">
               <div class="uploaded_and_visibility">
 
                 <div class="my-2 text-right">Uploaded by:</div>

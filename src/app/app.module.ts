@@ -12,6 +12,7 @@ import { TilesComponent } from './tiles/tiles.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { DescriptionAndCommentsComponent } from './description-and-comments/description-and-comments.component';
 import { CommentsComponent } from './comments/comments.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CommentsComponent } from './comments/comments.component';
     TilesComponent,
     DetailViewComponent,
     DescriptionAndCommentsComponent,
-    CommentsComponent
+    CommentsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
