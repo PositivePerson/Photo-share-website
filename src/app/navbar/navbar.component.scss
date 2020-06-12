@@ -103,6 +103,7 @@ div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
 
 .input-group {
 	width: 25em;
+	max-width: 25em;
 	border: 1px solid #ced4da;
 	border-radius: 30px !important;
 	background-color: #fff;
@@ -151,5 +152,12 @@ div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
 		// top: 50%;
 		left: calc(50% + 14.5em);
 		// transform: translate(-50%, -50%);
+	}
+}
+
+//------------------ M O B I L E ------------
+@media only screen and (max-device-width: 500px) {
+	.input-group {
+		width: 100%;
 	}
 }
