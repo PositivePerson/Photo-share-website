@@ -4,6 +4,7 @@
 
 #detail_view_container {
 	padding: 0 0;
+	min-height: 600px;
 }
 
 #detail_view .imageDetailArea {
@@ -11,16 +12,22 @@
 	overflow: auto;
 }
 
-// #detail_view .container-fluid .banerBox {
-// 	height: inherit;
-// }
+#detail_view .container-fluid .banerBox {
+	position: relative;
+	width: 125px;
+}
 
 #detail_view .container-fluid .baner {
 	height: 600px;
 	width: 120px;
-	margin: 0 .5em;
+	// margin: 0 .5em;
 	// margin-top: 100%;
 	border: 1px solid red;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #detail_view .choosedImageBox {
@@ -114,6 +121,7 @@
 
 	#detail_view_container {
 		position: relative;
+		min-height: 305px;
 	}
 
 	#detail_view .container-fluid .banerBox {
