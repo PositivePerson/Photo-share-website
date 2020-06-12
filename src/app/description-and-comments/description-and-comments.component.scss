@@ -44,7 +44,7 @@ label {
 	width: auto;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 575.98px) {
 	#belowDetails {
 		width: 100% !important;
 	}
