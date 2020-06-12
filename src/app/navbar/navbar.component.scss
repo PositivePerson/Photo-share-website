@@ -1,0 +1,155 @@
+nav {
+	background: #171717;
+	box-shadow: 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.upload {
+	height: calc(1.5em + 0.75rem + 2px);
+	border-radius: 30px;
+	font-size: 0.9em;
+}
+
+.logoutButton {
+	height: calc(1.5em + 0.75rem + 2px);
+	width: calc(1.5em + 0.75rem + 2px);
+	border-radius: 50%;
+	font-size: 0.9em;
+}
+
+.btn-circle {
+	// width: 30px;
+	// height: 30px;
+	padding: 6px 0px;
+	// border-radius: 15px;
+	// text-align: center;
+	// font-size: 12px;
+	// line-height: 1.42857;
+}
+
+.navProfile {
+	display: inline-block;
+	width: 9em;
+	line-height: 1.5em;
+}
+
+.navProfile img {
+	height: 2.4em;
+}
+
+.userName {
+	line-height: 90%;
+}
+
+.userName #userLikes {
+	font-size: 0.9em;
+}
+
+.dropdown-item {
+	padding: 0.25rem 1rem;
+}
+
+.dropdown img {
+	width: 30px;
+	height: auto;
+}
+
+#logout_icon img {
+	width: 1.5em;
+}
+
+// CENTER THINGS IN BUTTONS
+#upload-icon,
+#upload-icon i {
+	line-height: 1.5em;
+}
+
+div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.logoutButton i {
+	color: #dc3545;
+	font-size: 1.5em;
+}
+
+/*SEARCH FORM*/
+// .form-inline {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// }
+
+.search-form {
+	// border-radius: 30px 0px 0px 30px;
+	border-radius: 30px !important;
+	box-shadow: none;
+}
+/*to cange only one form and not all give unique class name like  class="search-form" */
+.search-btn {
+	// border-radius: 0px 30px 30px 0px;
+	cursor: pointer;
+}
+
+.form-control {
+	border: none;
+}
+
+.search-btn {
+	box-shadow: inherit;
+}
+
+.input-group {
+	width: 25em;
+	border: 1px solid #ced4da;
+	border-radius: 30px !important;
+	background-color: #fff;
+}
+
+// ------------------- T O O L T I P ----------------------
+
+// ----------------end of tooltip----------------
+
+//------------- M E D I U M -------------
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+//------------- L A R G E -------------
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.form-inline {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.upload {
+		position: absolute;
+		// top: 50%;
+		left: calc(50% + 11.25em);
+		// transform: translate(-50%, -50%);
+	}
+
+	.input-group {
+		width: 18.5em;
+	}
+}
+
+//------------- E X T R A  L A R G E -------------
+@media (min-width: 1200px) {
+	.form-inline {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.upload {
+		position: absolute;
+		// top: 50%;
+		left: calc(50% + 14.5em);
+		// transform: translate(-50%, -50%);
+	}
+}

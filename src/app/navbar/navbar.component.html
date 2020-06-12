@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">BRAND</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">GALLERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CATEGORIES</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    <!-- <div class="searchPlace d-none d-sm-block">
+      <input autocomplete="off" type="text" name="search" class="search-txt" placeholder="Type Something"/>
+      <a class="search-btn">
+      <i class="fas fa-search"></i>
+      </a>
+    </div> -->
+
+    <form id="search-form" class="form-inline my-2 my-lg-0" role="form" method="post" action="//www.google.com/search" target="_blank">
+      <div class="input-group">
+          <input type="text" class="form-control search-form" placeholder="Search">
+          <!--DO NOT NEED TRAILING SLASH "/" As HTML5 FORMS SLASHES ARE NO LONGER REQUIRED-->
+          <span class="input-group-btn">
+            <button type="submit" class="btn search-btn" data-target="#search-form" name="q"><i class="fa fa-search"></i></button>
+          </span>
+
+      </div>
+    </form>
+
+    <button type="button" class="btn btn-danger my-2 my-lg-0 upload d-flex align-items-center" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+      <span id="upload-icon"><i class="left material-icons">backup</i></span>
+      <span class="d-inline-block d-lg-none d-xl-inline-block pl-2">UPLOAD</span>
+    </button>
+
+    <div class="dropdown-divider my-4"></div>
+
+    <div class="navProfile">
+      <!-- <span>
+        <img src="../../assets/imgs/profile.png" alt="" id="profilePNG">
+      </span>
+      <span>
+        <div>User Name</div>
+        <div>200 Likes</div>
+      </span> -->
+
+      <div class="row mr-0 d-flex align-items-center">
+        <div class="col-4 pr-0 text-right">
+          <img src="../../assets/imgs/profile.png" alt="" id="profilePNG">
+        </div>
+        <div class="col-8 pl-1 userName">
+          <div class="row">
+            <div class="col-12">
+              User Name
+            </div>
+          </div>
+          <div class="row" id="userLikes">
+            <div class="col-12">
+              200 Likes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="logoutButton btn btn-secondary btn-circle">
+        <!-- <i class="material-icons">keyboard_tab</i> -->
+        <!-- <i class="fas fa-sign-out-alt"></i> -->
+        <span class=" d-flex justify-content-center align-items-center" id="logout_icon">
+          <img src="../../assets/imgs/logout.svg" alt="">
+        </span>
+        <!-- <i class="fas fa-sign-in-alt"></i> -->
+    </button>
+
+    <div class="nav-item dropdown d-inline-block float-right ml-2">
+      <a class="nav-link dropdown-toggle pr-3 pr-lg-0 pr-xl-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="../../assets/imgs/gb.png" alt="">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-width: 70px; min-width: 0rem;">
+        <a class="dropdown-item" href="#"><img src="../../assets/imgs/spain.png" alt=""></a>
+        <a class="dropdown-item" href="#"><img src="../../assets/imgs/poland.png" alt=""></a>
+        <!-- <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a> -->
+      </div>
+    </div>
+  </div>
+</nav>
