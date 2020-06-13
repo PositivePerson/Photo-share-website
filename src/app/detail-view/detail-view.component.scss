@@ -1,5 +1,5 @@
 #detail_view {
-	margin-top: 2em;
+	// margin-top: 2em;
 }
 
 #detail_view_container {
@@ -30,10 +30,13 @@
 	transform: translate(-50%, -50%);
 }
 
+.advertArea1 {
+}
+
 .advertBox1 {
 	height: 120px;
 	width: 600px;
-	background: yellow;
+	// background: yellow;
 	border: 1px solid red;
 }
 
@@ -168,6 +171,8 @@
 		width: 100%;
 		max-height: 100vh;
 		padding: 0 0;
+
+		// overflow: hidden;
 	}
 
 	.deleteAreaMobile {
