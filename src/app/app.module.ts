@@ -13,6 +13,8 @@ import { DetailViewComponent } from './detail-view/detail-view.component';
 import { DescriptionAndCommentsComponent } from './description-and-comments/description-and-comments.component';
 import { CommentsComponent } from './comments/comments.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainProfileComponent } from './main-profile/main-profile.component';
+import { UserImagesComponent } from './user-images/user-images.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './footer/footer.component';
     DetailViewComponent,
     DescriptionAndCommentsComponent,
     CommentsComponent,
-    FooterComponent
+    FooterComponent,
+    MainProfileComponent,
+    UserImagesComponent
   ],
   imports: [
     BrowserModule,

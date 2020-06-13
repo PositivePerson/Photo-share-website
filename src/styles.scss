@@ -30,10 +30,17 @@ $valium-theme: mat-light-theme($valium-primary, $valium-accent, $valium-warn);
 html,
 body {
 	height: 100%;
+	:focus {
+		outline: none;
+	}
+	::-moz-focus-inner {
+		border: 0;
+	}
 }
 body {
 	margin: 0;
-	font-family: Roboto, "Helvetica Neue", sans-serif;
+	// font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif;
 	background: #222;
 	color: #cfcfcf;
 }

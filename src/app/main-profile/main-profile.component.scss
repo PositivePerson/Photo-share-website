@@ -1,0 +1,89 @@
+#mainProfile {
+	font-size: 1.3em;
+	letter-spacing: 0.04em;
+
+	// background-image: linear-gradient(to right bottom, #222222, #292929, #313131, #383838, #404040);
+	// background-image: linear-gradient(to right bottom, #222222, #404040);
+	background-image: linear-gradient(
+		to right bottom,
+		#222222,
+		#252525,
+		#282727,
+		#2b292a,
+		#2e2c2c,
+		#312e2f,
+		#333131,
+		#363334,
+		#383637,
+		#3b3a3a,
+		#3d3d3d,
+		#404040
+	);
+}
+#mainProfile .mainProfileData {
+	color: rgba(255, 255, 255, 0.75);
+	// margin-top: -.5em;
+}
+#mainProfile .mainProfileData .data {
+	color: rgba(255, 255, 255, 1);
+	font-weight: 700;
+}
+#mainProfile .editProfileArea {
+	// position: relative;
+}
+#mainProfile .editProfileArea .editProfileBox {
+	// position: absolute;
+ // right: 2em;
+ // top: 2em;
+	z-index: 5;
+}
+#mainProfile .editProfileArea .editProfileBox button {
+	outline: none;
+}
+#mainProfile .profileImg img {
+	width: 11em;
+}
+#mainProfile .nicknameBox {
+	font-size: 1.3em;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	color: rgba(255, 255, 255, 0.9);
+}
+#mainProfile .followArea {
+	transform: translate(0, 50%); // color: #332F2F;
+ // background
+}
+#mainProfile .followArea .followSpan {
+	letter-spacing: 0.18em;
+}
+// #mainProfile #belowMainProfileData {
+// 	width: 100%;
+// 	height: 50em;
+// 	background: #222;
+// }
+//--------------- F O L L O W  B U T T O N  E F F E C T ---------------
+#mainProfile .button {
+	display: inline-flex;
+	align-items: center; // background: #c06c84;
+	background: #222;
+	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 1.8em;
+	padding: 0 3em;
+	color: #fff;
+	font-family: Lato, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+	will-change: transform;
+}
+#mainProfile .button:hover {
+	// background: #ae4b67;
+	background: #404040;
+	box-shadow: 0 4px 17px rgba(0, 0, 0, 0.3);
+	transform: translate3d(0, -2px, 0);
+}
+#mainProfile .button:active {
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	transform: translate3d(0, 1px, 0);
+}
+//--------------------------------------------- ---------------
