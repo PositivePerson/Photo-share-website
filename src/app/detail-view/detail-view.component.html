@@ -1,13 +1,13 @@
 <!-- ------------------- A D V E R T I S E M E N T ------------------- -->
-<div class="d-md-none d-flex align-items-center justify-content-center py-1 advertArea1">
-  <div class="d-inline-block d-md-none advertBox1"></div>
+<div class="d-lg-none d-flex align-items-center justify-content-center py-1 advertArea1">
+  <div class="d-inline-block d-lg-none advertBox1"></div>
 </div>
 <!-- --------------------------------------------------------- -->
-<section class="mt-md-4" id="detail_view">
+<section class="mt-lg-4" id="detail_view">
 
   <div class="container-fluid d-flex flex-row" id="detail_view_container">
     <!-- --------------- M O B I L E --------------- -->
-    <div class="d-block d-sm-none deleteAreaMobile">
+    <!-- <div class="d-block d-sm-none deleteAreaMobile">
       <div class="my-2">Tags:</div>
       <div class="my-2" id="cmcGroup">
         <button type="button" class="btn btn-warning">CMC (Group)</button>
@@ -23,9 +23,8 @@
         <div class="count text-center d-flex align-items-center">
           <span classs="">11</span>
         </div>
+        <button type="button" class="btn btn-danger minus">-</button>
       </div>
-      <br />
-      <button type="button" class="btn btn-danger minus">-</button>
     </div>
 
     <div class="d-block d-sm-none uploaded_and_visibility_mobile">
@@ -38,10 +37,10 @@
           Toggle visibility / Hide
         </button>
       </div>
-    </div>
+    </div> -->
     <!-- --------------------------------------------- -->
 
-    <div class="d-none d-md-block banerBox">
+    <div class="d-none d-lg-block banerBox">
       <div class="baner d-flex" id="baner1"></div>
     </div>
 
@@ -58,13 +57,10 @@
             <div class="count text-center d-flex align-items-center">
               <span classs="">11</span>
             </div>
-          </div>
-          <br />
-          <div class="minusBox">
             <button type="button" class="btn btn-danger minus">-</button>
           </div>
         </div>
-        <div class="d-none d-sm-block deleteArea">
+        <!-- <div class="d-none d-sm-block deleteArea">
           <div class="my-2">Tags:</div>
 
           <div class="my-2" id="cmcGroup">
@@ -75,13 +71,58 @@
               Delete (admin)
             </button>
           </div>
-        </div>
-        <div class="w-100 px-0 px-sm-1">
+        </div> -->
+        <div class="mx-auto px-0 px-sm-1 choosedImageArea">
           <div class="choosedImageBox">
-            <img src="../../assets/imgs/3.jpg" alt="" />
+            <img src="../../assets/imgs/1.jpg" alt="" />
           </div>
         </div>
-        <div class="d-none d-sm-block uploaded_and_visibility">
+
+        <div class="row d-flex justify-content-between mt-1 mt-sm-0 mb-4 mx-4 mx-sm-3 choosedImagePanel">
+
+          <div class="d-block deleteArea">
+            <div class="my-2">Tags:</div>
+
+            <div class="my-2" id="cmcGroup">
+              <button type="button" class="btn btn-warning">CMC (Group)</button>
+            </div>
+            <div class="my-2" id="deleteAdmin">
+              <button type="button" class="btn btn-danger">
+                Delete (admin)
+              </button>
+            </div>
+          </div>
+
+          <!-- ----------------- M O B I L E ----------------- -->
+          <div class="d-block d-sm-none countingAreaMobile">
+            <div class="d-flex flex-row plus_and_counting">
+              <button type="button" class="btn btn-success p-0 plus">+</button>
+              <div class="count text-center d-flex align-items-center">
+                <span classs="">11</span>
+              </div>
+              <button type="button" class="btn btn-danger p-0 minus">-</button>
+            </div>
+          </div>
+
+          <div class="d-block uploaded_and_visibility">
+            <div class="my-2 text-right">Uploaded by:</div>
+
+            <div class="my-2 text-right" id="uploadedBy">
+              <button type="button" class="btn btn-success ml-auto">
+                admin
+              </button>
+            </div>
+            <div class="my-2 text-right" id="visibility">
+              <button type="button" class="btn btn-danger">
+                Hide
+              </button>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------- -->
+
+        </div>
+        <!-- <div class="d-none d-sm-block uploaded_and_visibility">
           <div class="my-2 text-right">Uploaded by:</div>
 
           <div class="my-2 text-right" id="uploadedBy">
@@ -94,11 +135,11 @@
               Toggle visibility / Hide
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <div class="d-none d-md-block banerBox">
+    <div class="d-none d-lg-block banerBox">
       <div class="baner" id="baner2"></div>
     </div>
   </div>
