@@ -25,6 +25,8 @@
 
 	padding: 0.3em 1em;
 	border-radius: 0.85em;
+
+	cursor: pointer;
 }
 
 .likeBox {
@@ -33,18 +35,29 @@
 	// top: calc(100% - 3.7em);
 	bottom: 0.6em;
 
-	width: 8.7em;
+	width: 6.5em;
 }
 
 .like {
-	background: rgba(67, 182, 213, 0.3);
+	// background: rgba(67, 182, 213, 0.3);
 
-	width: 2.1em;
-	height: 2.1em;
+	width: 1.7em;
+	height: 1.7em;
 	border-radius: 50%;
 	text-align: center;
 
-	font-size: 1.5em;
+	font-size: 1.25em;
+}
+
+#tiles .testBox {
+	font-size: 1em;
+	padding: .15em .5em;
+}
+
+#tiles .likesAmount {
+	font-size: 1em;
+	height: auto;
+	padding: .15em .5em;
 }
 
 .likesAmount {
@@ -69,4 +82,68 @@
 
 .card:hover > div {
 	opacity: 1;
+}
+
+// ---------------- H E A R T ----------------
+.heart {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: url(http://imagizer.imageshack.com/img923/4545/XdJDuY.png) no-repeat;
+	cursor: pointer;
+
+	zoom: 0.8;
+}
+.heart-blast {
+	background-position: -2800px 0;
+	transition: background 1s steps(28);
+}
+
+// ------------------------------------------------
+
+//------------------ M O B I L E ------------
+@media (max-width: 575.98px) {
+	#tiles .testBox {
+		font-size: 1em;
+		padding: .15em .5em;
+	}
+
+	#tiles .likesAmount {
+		font-size: 1em;
+		height: auto;
+		padding: .15em .5em;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#tiles .testBox {
+		right: 0.2em;
+		top: 0.2em;
+	}
+
+	#tiles .likeBox {
+		left: 0.5em;
+		bottom: 0.2em;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#tiles .testBox {
+		right: 0.4em;
+		top: 0.4em;
+	}
+
+	#tiles .likeBox {
+		left: .5em;
+		bottom: 0.3em;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
 }

@@ -81,10 +81,16 @@
         <div class="row d-flex justify-content-between mt-1 mt-sm-0 mb-4 mx-4 mx-sm-3 choosedImagePanel">
 
           <div class="d-block deleteArea">
-            <div class="my-2">Tags:</div>
+            <div class="my-2 d-none d-sm-block">Tags:</div>
 
-            <div class="my-2" id="cmcGroup">
+            <div class="my-2 d-none d-sm-block" id="cmcGroup">
               <button type="button" class="btn btn-warning">CMC (Group)</button>
+            </div>
+            <div _ngcontent-jjn-c19="" class="my-2 text-right invisible">Uploaded by:</div>
+            <div class="my-2" id="visibility">
+              <button type="button" class="btn btn-danger">
+                Hide
+              </button>
             </div>
             <div class="my-2" id="deleteAdmin">
               <button type="button" class="btn btn-danger">
@@ -95,7 +101,7 @@
 
           <!-- ----------------- M O B I L E ----------------- -->
           <div class="d-block d-sm-none countingAreaMobile">
-            <div class="d-flex flex-row plus_and_counting">
+            <div class="d-flex flex-row-reverse plus_and_counting">
               <button type="button" class="btn btn-success p-0 plus">+</button>
               <div class="count text-center d-flex align-items-center">
                 <span classs="">11</span>
@@ -112,11 +118,11 @@
                 admin
               </button>
             </div>
-            <div class="my-2 text-right" id="visibility">
+            <!-- <div class="my-2 text-right" id="visibility">
               <button type="button" class="btn btn-danger">
                 Hide
               </button>
-            </div>
+            </div> -->
           </div>
 
           <!-- --------------------------------------------------- -->

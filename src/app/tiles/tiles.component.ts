@@ -14,4 +14,13 @@ export class TilesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void {
+    $(function () {
+
+      $(".heart").on("click", function () {
+        $(this).toggleClass("heart-blast");
+      });
+    });
+  }
+
 }

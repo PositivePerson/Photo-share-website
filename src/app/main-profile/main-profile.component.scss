@@ -23,6 +23,7 @@
 #mainProfile .mainProfileData {
 	color: rgba(255, 255, 255, 0.75);
 	// margin-top: -.5em;
+	// overflow-y: visible;
 }
 #mainProfile .mainProfileData .data {
 	color: rgba(255, 255, 255, 1);
@@ -32,9 +33,7 @@
 	// position: relative;
 }
 #mainProfile .editProfileArea .editProfileBox {
-	// position: absolute;
- // right: 2em;
- // top: 2em;
+	// position: absolute; // right: 2em; // top: 2em;
 	z-index: 5;
 }
 #mainProfile .editProfileArea .editProfileBox button {
@@ -42,6 +41,7 @@
 }
 #mainProfile .profileImg img {
 	width: 11em;
+	font-size: 1.3em;
 }
 #mainProfile .nicknameBox {
 	font-size: 1.3em;
@@ -50,18 +50,17 @@
 	color: rgba(255, 255, 255, 0.9);
 }
 #mainProfile .followArea {
-	transform: translate(0, 50%); // color: #332F2F;
- // background
+	transform: translate(0, 50%); // color: #332F2F; // background
 }
 #mainProfile .followArea .followSpan {
 	letter-spacing: 0.18em;
 }
 // #mainProfile #belowMainProfileData {
-// 	width: 100%;
-// 	height: 50em;
-// 	background: #222;
+// width: 100%;
+// height: 50em;
+// background: #222;
 // }
-//--------------- F O L L O W  B U T T O N  E F F E C T ---------------
+// --------------- F O L L O W  B U T T O N  E F F E C T ---------------
 #mainProfile .button {
 	display: inline-flex;
 	align-items: center; // background: #c06c84;
@@ -86,4 +85,28 @@
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 	transform: translate3d(0, 1px, 0);
 }
-//--------------------------------------------- ---------------
+// --------------------------------------------- ---------------
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	#mainProfile {
+		font-size: 1.05em;
+	}
+	#mainProfile .profileImg img {
+		font-size: 1.2em;
+	}
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#mainProfile {
+		font-size: 1.15em;
+	}
+}
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#mainProfile {
+		font-size: 1.22em;
+	}
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}

@@ -202,7 +202,7 @@
 
 	#detail_view .imageDetailArea {
 		width: 100%;
-		max-height: 100vh;
+		// max-height: 100vh;
 		padding: 0 0;
 
 		// overflow: hidden;
@@ -262,12 +262,34 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+	#detail_view .advertBox1 {
+		width: 90vh !important;
+	}
+
+	#detail_view #imageDetailRow {
+		max-width: 100%;
+
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	#detail_view .choosedImageArea {
 		width: 100%;
 	}
 
 	#detail_view .choosedImagePanel .btn {
 		padding: 0.25em;
+	}
+
+	#detail_view .deleteArea {
+		// display: flex !important;
+		// align-items: flex-end;
+
+		padding-top: 4.3em;
+	}
+
+	#detail_view .uploaded_and_visibility {
+		padding-top: 4.3em;
 	}
 }
 
