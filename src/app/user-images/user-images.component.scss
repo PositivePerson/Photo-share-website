@@ -23,6 +23,8 @@
 	position: absolute;
 	// left: 5em;
 	top: -1.5em;
+
+	white-space: nowrap;
 }
 #userImages .image {
 	// border: 1px solid red;
@@ -38,4 +40,42 @@
 	border-radius: 0.85em;
 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+// ---------------- H E A R T ----------------
+#userImages .likeGrid {
+	position: relative;
+}
+
+#userImages .heart {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: url(http://imagizer.imageshack.com/img923/4545/XdJDuY.png) no-repeat;
+	cursor: pointer;
+
+	zoom: 0.8;
+}
+#userImages .heart-blast {
+	background-position: -2800px 0;
+	transition: background 1s steps(28);
+}
+
+// ------------------------------------------------
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	#userImages .mostLikedImageRow {
+		padding-bottom: 3em;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) {
+	#userImages .uploadDate {
+		white-space: nowrap;
+	}
 }
