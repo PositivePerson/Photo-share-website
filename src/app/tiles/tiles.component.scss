@@ -120,9 +120,15 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+	#tiles .container-fluid {
+		width: 88%;
+	}
+
 	#tiles .testBox {
 		right: 0.2em;
 		top: 0.2em;
+
+		display: none;
 	}
 
 	#tiles .likeBox {
@@ -133,6 +139,10 @@
 
 // Medium devices (tablets, less than 992px)
 @media (min-width: 768px) and (max-width: 991.98px) {
+	#tiles .container-fluid {
+		width: 95%;
+	}
+
 	#tiles .testBox {
 		right: 0.4em;
 		top: 0.4em;
